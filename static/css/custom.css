@@ -1,0 +1,68 @@
+/* static/css/custom.css */
+
+:root {
+
+    --font-main: 'Inter', sans-serif;
+    --font-title: 'Playfair Display', serif;
+
+    /* Définis tes 3 couleurs ici */
+    --color-primary: #0B132B;   /* Exemple : Vert Émeraude */
+    --color-secondary: #E5E7EB; /* Exemple : Bleu Nuit */
+    --color-accent: #000000;    /* Exemple : Jaune Sable */
+    --color-active: #807C7C;
+}
+
+/* On "écrase" les classes Bootstrap par défaut */
+.btn-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: white !important;
+}
+
+.text-primary { color: var(--color-primary) !important; }
+.bg-primary { background-color: var(--color-primary) !important; }
+
+.btn-secondary {
+    background-color: var(--color-secondary) !important;
+    border-color: var(--color-secondary) !important;
+}
+
+/* Custom utility pour ta 3ème couleur */
+.bg-accent { background-color: var(--color-accent) !important; }
+.text-accent { color: var(--color-accent) !important; }
+
+
+/* Change la couleur de tous les liens de la nav */
+.nav-link {
+    color: var(--color-accent) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Change la couleur au survol */
+.nav-link:hover {
+    color: var(--color-accent) !important;
+}
+
+/* Style pour le lien de la page active */
+.nav-link.active {
+    color: var(--color-active) !important;
+    
+}
+
+/* Applique les polices personnalisées pour la navbar */
+.navbar {
+    font-family: 'Playfair Display', serif;
+    /* On augmente un peu la taille car les polices Serif paraissent souvent plus petites */
+    font-size: 1.1rem; 
+}
+
+.navbar-brand {
+    font-weight: 700; /* Plus gras pour le logo/nom du site */
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-transform: capitalize; /* Optionnel : Première lettre en majuscule */
+}
