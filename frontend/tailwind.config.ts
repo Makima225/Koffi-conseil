@@ -5,8 +5,8 @@ export default <Config>{
   theme: {
     extend: {
       fontFamily: {
-        // Ajoute Helvetica Neue comme police par défaut (sans-serif)
-        
+        sans: ['Inter', 'sans-serif'],  // Police par défaut pour tout le site
+        playfair: ['Playfair Display', 'serif'],  // Police personnalisée
       },
     },
   },

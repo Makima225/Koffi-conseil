@@ -4,7 +4,11 @@
         <main class="flex-grow">
             <slot />
         </main>
-        <Footer/>
+        <Footer />
     </div>
 </template>
-<script setup></script>
+<script setup>
+import Footer from '~/components/vitrine/Footer.vue';
+import Header from '~/components/vitrine/Header.vue';
+
+</script>
